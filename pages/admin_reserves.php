@@ -14,7 +14,7 @@ $admin = mysqli_fetch_object(mysqli_query($conn, "SELECT * FROM admin_users WHER
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Reserve List</title>
+    <title>Admin Reserve List <?php echo "{$admin->fname} {$admin->mname[0]}. {$admin->lname}" ?></title>
     <link rel="shortcut icon" href="../img/jadzo_logo.jpg">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli" />
     <!-- Bootstrap -->
@@ -119,7 +119,7 @@ $admin = mysqli_fetch_object(mysqli_query($conn, "SELECT * FROM admin_users WHER
                             <span class="section">Reserves List</span>
                             <div class="x_content">
 
-                                <table id="datatable-buttons" class="table table-striped table-bordered">
+                                <table id="datatable-buttons" class="table table-striped table-bordered" style="width:100%;">
                                     <thead>
                                         <tr class="headings">
                                             <th class="column-title">Refference Number</th>
@@ -141,31 +141,31 @@ $admin = mysqli_fetch_object(mysqli_query($conn, "SELECT * FROM admin_users WHER
                                             $date_reserve = $row->date_of_reservation;
                                             $date1 = new DateTime($date_reserve);
                                             $date2 = new DateTime();
-                                            
+
                                             $reserve_id = $row->id;
 
                                             if (($date1 <= $date2) == 1) {
                                                 mysqli_query($conn, "DELETE FROM reserve WHERE id = '$reserve_id'");
-                                            }
-                                            else {
-                                            ?>
+                                            } else {
+                                                ?>
 
-                                            <tr>
-                                                <td><?php echo $row->ref_num ?></td>
-                                                <td><?php echo $row->full_name ?></td>
-                                                <td><?php echo $row->reservation_title ?></td>
-                                                <td><?php echo $row->price ?></td>
-                                                <td><?php echo $row->contact_number ?></td>
-                                                <td><?php echo $row->address ?></td>
-                                                <td><?php echo $row->car_model ?></td>
-                                                <td><?php echo $row->date_of_reservation ?></td>
-                                                <td style="text-align:center;">
-                                                    <a href="upload_reciept.php?id=<?php echo $reserve_id ?>" class="btn btn-warning btn-xs">
-                                                        Pay <i class="fa fa-money"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        <?php  } endwhile; ?>
+                                                <tr>
+                                                    <td><?php echo $row->ref_num ?></td>
+                                                    <td><?php echo $row->full_name ?></td>
+                                                    <td><?php echo $row->reservation_title ?></td>
+                                                    <td><?php echo $row->price ?></td>
+                                                    <td><?php echo $row->contact_number ?></td>
+                                                    <td><?php echo $row->address ?></td>
+                                                    <td><?php echo $row->car_model ?></td>
+                                                    <td><?php echo $row->date_of_reservation ?></td>
+                                                    <td style="text-align:center;">
+                                                        <a href="upload_reciept.php?id=<?php echo $reserve_id ?>" class="btn btn-warning btn-xs">
+                                                            Pay <i class="fa fa-money"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                        <?php  }
+                                        endwhile; ?>
                                     </tbody>
                                 </table>
                             </div>

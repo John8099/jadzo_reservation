@@ -14,7 +14,7 @@ $admin = mysqli_fetch_object(mysqli_query($conn, "SELECT * FROM admin_users WHER
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Admin Reserves</title>
+    <title>Admin List <?php echo "{$admin->fname} {$admin->mname[0]}. {$admin->lname}" ?></title>
     <link rel="shortcut icon" href="../img/jadzo_logo.jpg">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Muli" />
     <!-- Bootstrap -->
@@ -119,7 +119,7 @@ $admin = mysqli_fetch_object(mysqli_query($conn, "SELECT * FROM admin_users WHER
                             <span class="section">Admin List</span>
                             <div class="x_content">
 
-                                <table id="datatable-buttons" class="table table-striped table-bordered">
+                                <table id="datatable-buttons" class="table table-striped table-bordered" style="width:100%;">
                                     <thead>
                                         <tr class="headings">
                                             <th class="column-title">Full name</th>
