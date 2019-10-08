@@ -73,7 +73,7 @@ if ($new_amount_condition == 1) {
             '$peso$amount_paid',
             '$date',
             '$admin_name',
-            'ref_num'
+            '$ref_num'
         )");
 
         if ($insert_report) {
