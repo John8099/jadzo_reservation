@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 08, 2019 at 06:01 PM
+-- Generation Time: Oct 08, 2019 at 06:41 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `admin_users` (
 --
 
 INSERT INTO `admin_users` (`id`, `fname`, `mname`, `lname`, `email`, `contact_number`, `uname`, `password`, `createAt`) VALUES
-(1, 'JOHN', 'PADERAN', 'MONTEMAR', 'montemar@gmail.com', '0920192301', 'john', '$2y$10$wqxgf2L37qDXxc4Mrba7hORuJpCorGozXjIhdu70zrv.SEFinNs6m', '09-25-2019 02:41:37PM');
+(1, 'JOJO ', 'ADMIN', 'GIERZA', 'admin@jadzo.com', '09123456789', 'admin', '$2y$10$vP8oM/ZPfOhEXfoZczTbH.UTiWpWmDcR6hAl37kgbDmAdAza121DC', '10-09-2019 12:40:35AM');
 
 -- --------------------------------------------------------
 
@@ -60,17 +60,7 @@ CREATE TABLE IF NOT EXISTS `messages` (
   `message` longtext NOT NULL,
   `createAt` varchar(32) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
-
---
--- Dumping data for table `messages`
---
-
-INSERT INTO `messages` (`id`, `full_name`, `email`, `contact_number`, `message`, `createAt`) VALUES
-(3, 'JOHN MONTEMAR', 'montemar@gmail.com', '092019231', 'how many id do you want', 'Sep 25, 2019 03:59:04:PM'),
-(7, 'HDHDH', 'hdhs@gmail.com', '09262827224', 'hshshshshs', 'Sep 26, 2019 03:08:42PM'),
-(8, 'GDHDHS', 'gs@gmail.com', '092637272', 'h', 'Sep 26, 2019 03:09:26PM'),
-(9, 'LJOHN', 'montemar@gmail.com', '02371928371923', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo, laborum voluptate repellendus, aspernatur debitis culpa ipsum velit totam rem dolor voluptatem harum illo sint iste minus molestiae veritatis cumque\n', 'Sep 29, 2019 04:44:05PM');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -92,49 +82,7 @@ CREATE TABLE IF NOT EXISTS `report` (
   `paid_to` varchar(32) NOT NULL,
   `ref_num` varchar(32) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=37 ;
-
---
--- Dumping data for table `report`
---
-
-INSERT INTO `report` (`id`, `full_name`, `contact_number`, `address`, `car_model`, `reservation_title`, `price`, `date_of_reservation`, `amount_paid`, `date_paid`, `paid_to`, `ref_num`) VALUES
-(1, 'HEHEHEHE', '09123456789', 'JARO ILOILO', 'NISSAN 500', 'COOLING', 'â‚±7500', '09/28/2019 7:30 PM', 'â‚±996', '09/26/2019 01:28:37 AM', 'JOHN P. MONTEMAR', ''),
-(2, 'JOHN EMMANUEL MONTEMAR', '09123456789', 'JARO ILOILO', 'NISSAN 500', 'CHANGE OIL', 'â‚±3120', '09/27/2019 7:30 PM', 'â‚±200', '09/26/2019 01:29:11 AM', 'JOHN P. MONTEMAR', ''),
-(3, 'JOHN MONTEMAR', '09279172745', 'JARO ILOILO', 'NISSAN 500', 'CAR BREAKS', 'â‚±1900', '09/27/2019 4:25 PM', 'â‚±1900', '09/26/2019 01:29:42 AM', 'JOHN P. MONTEMAR', ''),
-(4, 'JOHN MONTEMAR', '2023123', 'AWD', 'AWD', 'COOLING', 'â‚±7500', '09/30/2019 4:41 PM', 'â‚±7300', '09/29/2019 05:03:40 PM', 'JOHN P. MONTEMAR', ''),
-(5, 'JOHN MONTEMAR', '2023123', 'AWD', 'AWD', 'COOLING', 'â‚±200', '09/30/2019 4:41 PM', 'â‚±200', '09/29/2019 05:04:50 PM', 'JOHN P. MONTEMAR', ''),
-(6, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±7977', '10/24/2019 3:40 PM', 'â‚±21', '10/05/2019 07:29:36 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(7, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±7956', '10/24/2019 3:40 PM', 'â‚±200', '10/05/2019 07:40:51 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(8, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±7756', '10/24/2019 3:40 PM', 'â‚±500', '10/05/2019 07:43:30 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(9, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±7256', '10/24/2019 3:40 PM', 'â‚±500', '10/05/2019 07:44:01 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(10, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±7256', '10/24/2019 3:40 PM', 'â‚±500', '10/05/2019 07:44:41 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(11, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±7256', '10/24/2019 3:40 PM', 'â‚±500', '10/05/2019 07:44:54 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(12, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±7256', '10/24/2019 3:40 PM', 'â‚±500', '10/05/2019 07:47:44 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(13, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±7256', '10/24/2019 3:40 PM', 'â‚±500', '10/05/2019 07:48:02 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(14, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6756', '10/24/2019 3:40 PM', 'â‚±500', '10/05/2019 07:48:09 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(15, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6756', '10/24/2019 3:40 PM', 'â‚±500', '10/05/2019 07:48:32 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(16, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6256', '10/24/2019 3:40 PM', 'â‚±21', '10/05/2019 07:48:46 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(17, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6256', '10/24/2019 3:40 PM', 'â‚±21', '10/05/2019 07:49:59 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(18, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6235', '10/24/2019 3:40 PM', 'â‚±21', '10/05/2019 07:50:08 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(19, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6214', '10/24/2019 3:40 PM', 'â‚±12', '10/05/2019 07:50:25 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(20, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6202', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 07:51:02 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(21, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6202', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 07:51:33 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(22, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6180', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 07:51:58 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(23, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6158', '10/24/2019 3:40 PM', 'â‚±12', '10/05/2019 07:52:08 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(24, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6158', '10/24/2019 3:40 PM', 'â‚±12', '10/05/2019 07:53:08 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(25, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6146', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 07:53:38 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(26, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6146', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 07:55:26 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(27, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6146', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 07:55:51 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(28, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6146', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 07:56:09 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(29, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6146', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 07:56:25 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(30, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6146', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 07:57:23 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(31, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6146', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 07:58:15 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(32, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6146', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 07:59:11 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(33, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6146', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 07:59:53 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(34, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6146', '10/24/2019 3:40 PM', 'â‚±22', '10/05/2019 08:00:58 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(35, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±6124', '10/24/2019 3:40 PM', 'â‚±6000', '10/05/2019 08:01:13 PM', 'JOHN P. MONTEMAR', '154100100219'),
-(36, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±124', '10/24/2019 3:40 PM', 'â‚±12', '10/05/2019 08:01:26 PM', 'JOHN P. MONTEMAR', '154100100219');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -154,17 +102,7 @@ CREATE TABLE IF NOT EXISTS `reserve` (
   `ref_num` varchar(32) NOT NULL,
   `checking` varchar(32) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
-
---
--- Dumping data for table `reserve`
---
-
-INSERT INTO `reserve` (`id`, `full_name`, `contact_number`, `address`, `car_model`, `reservation_title`, `price`, `date_of_reservation`, `ref_num`, `checking`) VALUES
-(22, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±112', '10/24/2019 3:40 PM', '154100100219', '10/24/2019'),
-(23, 'AWD', '098765432', 'AWD', 'FORD', 'AIRCON', 'â‚±8000', '10/24/2019 3:40 PM', '154100100219', '10/24/2019'),
-(24, 'AWD', '123456', 'AWD', 'FORD', 'AIRCON', 'â‚±8000', '10/11/2019 4:28 PM', '162820100219', ''),
-(25, 'AWD', '123', 'AWD', 'NISSAN', 'AIRCON', 'â‚±7500', '10/16/2019 11:52 PM', '235243100819', '');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
