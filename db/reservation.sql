@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 08, 2019 at 06:41 PM
+-- Generation Time: Oct 08, 2019 at 06:43 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -37,14 +37,15 @@ CREATE TABLE IF NOT EXISTS `admin_users` (
   `password` varchar(100) NOT NULL,
   `createAt` varchar(32) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `admin_users`
 --
 
 INSERT INTO `admin_users` (`id`, `fname`, `mname`, `lname`, `email`, `contact_number`, `uname`, `password`, `createAt`) VALUES
-(1, 'JOJO ', 'ADMIN', 'GIERZA', 'admin@jadzo.com', '09123456789', 'admin', '$2y$10$vP8oM/ZPfOhEXfoZczTbH.UTiWpWmDcR6hAl37kgbDmAdAza121DC', '10-09-2019 12:40:35AM');
+(1, 'JOJO ', 'ADMIN', 'GIERZA', 'admin@jadzo.com', '09123456789', 'admin', '$2y$10$vP8oM/ZPfOhEXfoZczTbH.UTiWpWmDcR6hAl37kgbDmAdAza121DC', '10-09-2019 12:40:35AM'),
+(2, 'STEVE ', 'ADMIN', 'ORTALIZ', 'steve@jadzo.com', '091929172927', 'steve', '$2y$10$nQCbGF5AMX0SKzN40DplueObUd6FSA3MpeYTS2xGJ2.6sm9vNoHz6', '10-09-2019 12:43:44AM');
 
 -- --------------------------------------------------------
 
