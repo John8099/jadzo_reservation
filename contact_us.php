@@ -21,7 +21,7 @@
         <div class="img-contact-us">
 
             <label for="contact-us">
-                <h1>Contact Us</h1>
+                <h1>Message Us</h1>
             </label>
         </div>
     </div>

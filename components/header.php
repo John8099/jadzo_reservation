@@ -7,7 +7,9 @@ $current_url = $get_url[$last_index];
 $urls = array(
     "index.php" => "Home",
     "service.php" => "Services",
-    "contact_us.php" => "Contact Us",
+    "onsale.php" => "On Sale",
+    "gallery.php" => "Gallery",
+    "contact_us.php" => "Message Us",
 );
 ?>
 

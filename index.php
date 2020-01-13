@@ -1,3 +1,10 @@
+<?php 
+include 'php/server.php';
+date_default_timezone_set('Asia/Manila');
+$date = date('M d, Y h:i:sA');
+$ip_address = $_SERVER['REMOTE_ADDR'];
+$add_visits = mysqli_query($conn,"INSERT INTO visits VALUES (NULL, '$ip_address', '$date')");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -63,28 +70,28 @@
                     <label for="offer">
                         Automotive Repaint
                     </label><br>
-                    <a href="service.php"><button type="button" class="btn btn-primary">Reserve now</button></a>
+                    <a href="service.php"><button type="button" class="btn btn-primary">Read More</button></a>
                 </div>
                 <div class="col-sm-6">
-                    <img src="img/car_oil_change.jpg">
+                    <img src="img/modification.jpg">
                     <label for="offer">
-                        Automotive Change Oil
+                        Automotive Modification
                     </label> <br>
-                    <a href="service.php"><button type="button" class="btn btn-primary">Reserve now</button></a>
+                    <a href="service.php"><button type="button" class="btn btn-primary">Read More</button></a>
                 </div>
                 <div class="col-sm-6">
                     <img src="img/car_wash.jpg">
                     <label for="offer">
                         Automotive Wash
                     </label><br>
-                    <a href="service.php"><button type="button" class="btn btn-primary">Reserve now</button></a>
+                    <a href="service.php"><button type="button" class="btn btn-primary">Read More</button></a>
                 </div>
                 <div class="col-sm-6">
                     <img src="img/car_repair.jpg">
                     <label for="offer">
                         Automotive Repair
                     </label><br>
-                    <a href="service.php"><button type="button" class="btn btn-primary">Reserve now</button></a>
+                    <a href="service.php"><button type="button" class="btn btn-primary">Read More</button></a>
                 </div>
             </div>
         </div>

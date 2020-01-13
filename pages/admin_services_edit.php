@@ -122,11 +122,18 @@ $admin = mysqli_fetch_object(mysqli_query($conn, "SELECT * FROM admin_users WHER
                                     </div>
                                 </div>
                                 <div class="item form-group">
+                                    <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Subtitle<span class="required">*</span>
+                                    </label>
+                                    <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <input class="form-control col-md-7 col-xs-12" name="sub_title" value="<?php echo $service->sub_title ?>" type="text">
+                                    </div>
+                                </div>
+                                <div class="item form-group">
                                     <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Price <span class="required">*</span>
                                     </label>
 
                                     <div class="col-md-6 col-sm-6 col-xs-12">
-                                        <input class="form-control col-md-7 col-xs-12" data-validate-length-range="3" name="price" value="<?php echo ltrim($service->price, "₱") ?>" required="required" type="number">
+                                        <input class="form-control col-md-7 col-xs-12" data-validate-length-range="3" name="price" value="<?php echo ltrim($service->price, "₱") ?>" required="required" type="text">
                                     </div>
                                 </div>
                                 <div class="ln_solid"></div>

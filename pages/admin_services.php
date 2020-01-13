@@ -123,13 +123,14 @@ $admin = mysqli_fetch_object(mysqli_query($conn, "SELECT * FROM admin_users WHER
                                         <tr class="headings">
                                             <th class="column-title">Logo</th>
                                             <th class="column-title">Title</th>
+                                            <th class="column-title">Subtitle</th>
                                             <th class="column-title">Price</th>
                                             <th class="column-title">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $sql = mysqli_query($conn, "SELECT * FROM services");
+                                        $sql = mysqli_query($conn, "SELECT * FROM services ORDER BY id DESC");
                                         while ($row = mysqli_fetch_object($sql)) :
                                             $service_id = $row->id;
                                             ?>
@@ -137,6 +138,7 @@ $admin = mysqli_fetch_object(mysqli_query($conn, "SELECT * FROM admin_users WHER
                                             <tr>
                                                 <td><img src="data:image/png;base64,<?php echo base64_encode($row->logo) ?>" style="width:80px;"></td>
                                                 <td><?php echo $row->title ?></td>
+                                                <td><?php echo $row->sub_title ?></td>
                                                 <td><?php echo $row->price ?></td>
                                                 <td style="text-align:center;">
                                                     <a href="admin_services_edit.php?id=<?php echo $service_id ?>" class="btn btn-info btn-xs">
